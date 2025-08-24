@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Optional: your tokens */
+@theme {
+  --font-sans: ui-sans-serif, system-ui, Inter, "Segoe UI", Roboto, Helvetica, Arial;
+  --color-brand-500: #3b82f6;
+}
+
+/* Make sure base colors are sane */
+@layer base {
+  body { @apply bg-gray-50 text-gray-900; }
+}
