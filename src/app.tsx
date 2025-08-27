@@ -55,6 +55,11 @@ export function App() {
           <span class="ml-1 font-medium text-brand-500">this bit is brand-500.</span>
         </p>
 
+        <p class="mt-2 text-sm text-gray-600">
+          This is a fresh change
+          <span class="ml-1 font-medium text-brand-500">to see netlify is running..</span>
+        </p>
+
         <p class="text-gray-600">
           If Tailwind is active, this should be gray-600, not white.
           <span class="text-brand-500 font-medium ml-1">This bit should be brand-500.</span>
