@@ -9,15 +9,33 @@ const phrases = [
 ];
 
 export default function Landing() {
+  const [text, setText] = useState('');
   const [idx, setIdx] = useState(0);
 
-  // rotate headline every 2.5s
   useEffect(() => {
-    const id = setInterval(() => {
-      setIdx((i) => (i + 1) % phrases.length);
-    }, 2500);
-    return () => clearInterval(id);
-  }, []);
+    let char = 0;
+    let timeoutId: number;
+
+    const typePhrase = () => {
+      if (char < phrases[idx].length) {
+        // add one more character
+        setText((t) => t + phrases[idx][char]);
+        char++;
+        timeoutId = window.setTimeout(typePhrase, 60); // typing speed (ms per char)
+      } else {
+        // pause after finishing phrase
+        timeoutId = window.setTimeout(() => {
+          // move to next phrase
+          setIdx((i) => (i + 1) % phrases.length);
+          setText(''); // instantly clear
+        }, 1600); // pause duration (ms)
+      }
+    };
+
+    typePhrase();
+
+    return () => clearTimeout(timeoutId);
+  }, [idx]);
 
   return (
     <section class={styles.wrap} aria-label="Intro">
@@ -26,9 +44,10 @@ export default function Landing() {
         SAMIR GOSSAIN
       </a>
 
-      {/* main rotating headline */}
+      {/* hero headline with typing effect */}
       <h1 class={styles.hero} aria-live="polite" aria-atomic="true">
-        <span key={phrases[idx]} class={styles.fade}>{phrases[idx]}</span>
+        <span class={styles.fade}>{text}</span>
+        <span class={styles.caret} aria-hidden="true" />
       </h1>
     </section>
   );
