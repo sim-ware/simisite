@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'preact/hooks';
 import styles from './Landing.module.css';
 
-
 const phrases = [
-  "Samir Gossain is a DESIGNER",
-  "Samir Gossain is a DEVELOPER",
-  "Samir Gossain is a STRATEGIST",
-  "Samir Gossain is a TINKERER",
+  'Samir is a full-stack TypeScript developer',
+  'Samir loves design',
+  'Samir is a strategic thinker',
+  'Samir can tinker for hours',
 ];
 
 export default function Landing() {
@@ -22,8 +21,8 @@ export default function Landing() {
 
   return (
     <section class={styles.wrap} aria-label="Intro">
-      {/* wordmark / small-caps top-left */}
-      <a href="/" class={styles.brand} aria-label="mcchillin home">
+      {/* wordmark / small, uppercased, top-left */}
+      <a href="/" class={styles.brand} aria-label="Samir Gossain — home">
         SAMIR GOSSAIN
       </a>
 
@@ -31,21 +30,6 @@ export default function Landing() {
       <h1 class={styles.hero} aria-live="polite" aria-atomic="true">
         <span key={phrases[idx]} class={styles.fade}>{phrases[idx]}</span>
       </h1>
-
-      {/* bottom teaser banner that hints the scrolling bio */}
-      <button
-        class={styles.teaser}
-        onClick={() => {
-          const el = document.querySelector('#bio');
-          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }}
-        aria-label="Scroll to bio"
-      >
-        <span class={styles.teaserInner}>
-          <span>↓ BIO • ABOUT • WORK • CONTACT •</span>
-          <span aria-hidden="true" class={styles.marqueeClone}>↓ BIO • ABOUT • WORK • CONTACT •</span>
-        </span>
-      </button>
     </section>
   );
 }
