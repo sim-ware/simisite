@@ -1,50 +1,9 @@
-/* ===== Rhythm & theme ===== */
-:root {
-  --pad: clamp(16px, 2.2vw, 28px);
-  --bg: #39f;
-  --fg: #f5f5f5;
-}
-
-/* ===== Layout: 3-row grid (top / center / bottom) ===== */
-.wrap {
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: 1fr auto 1fr auto;
-  /* top spacer / wordmark / center / teaser */
-  background: var(--bg);
-  color: var(--fg);
-  padding: var(--pad);
-}
-
-/* ===== Wordmark (top-left, airy & tiny) ===== */
-.brand {
-  margin-top: 20.5vh;
-  justify-self: start;
-  align-self: start;
-  text-decoration: none;
-  color: #e0e7ff;
-  text-transform: uppercase;
-
-  /* Scale & spacing */
-  font-size: clamp(.875rem,-.149vw + 1.03rem,1rem);
-  letter-spacing: .035em;
-  font-weight: 500;
-  opacity: 0.78;
-
-  /* keep it visually a touch away from edges */
-  /* margin-top: 20.5vh; */
-}
-
 /* ===== Rotating headline (dead left, bold, tight) ===== */
 .hero {
-  align-self: start;
-  justify-self: start;
-  text-align: start;
-
   /* Big, responsive, with a tight, confident line-height */
   font-size: clamp(1.688rem,6.642vw + .359rem,7.25rem);
-  line-height: 1.02;
-  font-weight: 500;
+  line-height: 1;
+  font-weight: 700;
   letter-spacing: -.045em;
 
   /* Keep the line length compact (single-line on common widths) */

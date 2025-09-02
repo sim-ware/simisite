@@ -38,17 +38,18 @@ export default function Landing() {
   }, [idx]);
 
   return (
-    <section class={styles.wrap} aria-label="Intro">
-      {/* wordmark / small, uppercased, top-left */}
-      <a href="/" class={styles.brand} aria-label="Samir Gossain — home">
-        SAMIR GOSSAIN
-      </a>
+    <>
+      <div style={{ backgroundColor: '#39f', height: '90dvh', paddingTop: '24.5dvh', paddingLeft: '2.5dvw' }}>
 
-      {/* hero headline with typing effect */}
-      <h1 class={styles.hero} aria-live="polite" aria-atomic="true">
-        <span class={styles.fade}>{text}</span>
-        <span class={styles.caret} aria-hidden="true" />
-      </h1>
-    </section>
+        {/* wordmark / small, uppercased, top-left */}
+        <p style={{ letterSpacing: '0.035em', fontWeight: 700, color: '#e0e7ff', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" }}>SIM-WARE</p>
+
+        {/* hero headline with typing effect */}
+        <h1 style={{ paddingTop: '10.5dvh'}} class={styles.hero}>
+          <span class={styles.fade}>{text}</span>
+          <span class={styles.caret}/>
+        </h1>
+      </div>
+    </>
   );
 }
