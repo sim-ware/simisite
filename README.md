@@ -1,6 +1,9 @@
 # simisite
 * personal website
-* TypseScript | Vite ~ Preact ~ Tailwind | Netlify
+* TypeScript | Vite ~ Preact ~ Tailwind | Netlify
+
+* local URL: http://localhost:5173/ 
+* live URL : https://incomparable-platypus-450061.netlify.app/ 
 
 ### commands
 * dev  : `pnpm run dev`
