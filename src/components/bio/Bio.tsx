@@ -114,12 +114,12 @@ export default function Bio() {
         </div>
 
         {/* VALEDICTION */}
-        <div style={{backgroundColor: 'purple', height: '55dvh'}}>
-          <h3 style={{lineHeight: '1', paddingTop: '20dvh', paddingLeft: '2.5dvw', letterSpacing: '-0.055em', fontWeight: 500, color: '#E0E7FF', fontSize: "clamp(1.5rem,3.582vw + .784rem,4.5rem)" }}>
+        <div style={{backgroundColor: 'purple', height: '65dvh'}}>
+          <h3 style={{lineHeight: '1', paddingTop: '22dvh', paddingLeft: '2.5dvw', letterSpacing: '-0.055em', fontWeight: 500, color: '#E0E7FF', fontSize: "clamp(1.5rem,3.582vw + .784rem,4.5rem)" }}>
             Thanks for stopping by. If you have a project or are hiring for an exciting role, I'd love to hear from you.
           </h3>
 
-          <p style={{ paddingTop: '5dvh', paddingLeft: '2.5dvw' }} >©Samir Gossain</p>
+          <p style={{ paddingTop: '7.5dvh', paddingLeft: '2.5dvw', fontWeight: 400, fontSize: 'clamp(1rem, 0.881rem + 0.597vw, 1.5rem)', color: '#E0E7FF'}} >© Samir Gossain</p>
         </div>
       </section>
   );
