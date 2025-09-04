@@ -33,7 +33,7 @@ export default function Bio() {
             </div>
 
             {/* Right column: contact + tech stack */}
-            <div>
+            <div style={{paddingTop: '0.5dvh', paddingLeft: '5dvh'}}>
               <p style={{letterSpacing: '0.035em', fontWeight: 700, color: '#E0E7FF', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"}}>
                 CONTACT
               </p>
@@ -112,6 +112,103 @@ export default function Bio() {
             </div>
           </div>
         </div>
+
+        <div style={{backgroundColor: 'green', height: '10dvh'}}>
+          <p style={{paddingTop: '3.5dvh', paddingLeft: '2.5dvw', letterSpacing: '0.035em', fontWeight: 700, color: '#E0E7FF', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" }}>
+            WORK
+          </p>
+        </div>
+
+        <div style={{
+          backgroundColor: 'pink',
+          height: '50dvh',
+          display: 'flex',
+          alignItems: 'flex-start',
+          gap: '5dvw'
+        }}>
+          {/* LEFT COLUMN */}
+          <h1 style={{
+            paddingLeft: '2.5dvw',
+            paddingTop: '11dvh',
+            fontSize: "clamp(1.688rem,6.642vw + .359rem,7.25rem)",
+            lineHeight: '1',
+            fontWeight: 700,
+            letterSpacing: '-.045em',
+            width: '47.5%'
+          }}>
+            Oak Street Health
+          </h1>
+
+          {/* RIGHT COLUMN */}
+          <div style={{paddingTop: '11dvh', flex: 1}}>
+            {/* Paragraph */}
+            <p style={{
+              fontSize: "clamp(1rem, .597vw + .881rem, 1.5rem)",
+              color: '#E0E7FF',
+              marginBottom: '3.5dvh'
+            }}>
+              Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano.
+            </p>
+
+            {/* CRAFT + ROLE side by side */}
+            <div style={{display: 'flex', gap: '5dvw'}}>
+              {/* CRAFT */}
+              <div>
+                <p style={{
+                  marginBottom: '1rem',
+                  letterSpacing: '0.035em',
+                  fontWeight: 700,
+                  color: '#E0E7FF',
+                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
+                }}>
+                  CRAFT
+                </p>
+                <ul style={{
+                  listStyleType: 'square',
+                  paddingLeft: '1.5rem',
+                  margin: 0
+                }}>
+                  <li style={{
+                    letterSpacing: '0.035em',
+                    fontWeight: 700,
+                    color: '#E0E7FF',
+                    fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
+                  }}>
+                    TypeScript
+                  </li>
+                </ul>
+              </div>
+
+              {/* ROLE */}
+              <div>
+                <p style={{
+                  marginBottom: '1rem',
+                  letterSpacing: '0.035em',
+                  fontWeight: 700,
+                  color: '#E0E7FF',
+                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
+                }}>
+                  ROLE
+                </p>
+                <ul style={{
+                  listStyleType: 'square',
+                  paddingLeft: '1.5rem',
+                  margin: 0
+                }}>
+                  <li style={{
+                    letterSpacing: '0.035em',
+                    fontWeight: 700,
+                    color: '#E0E7FF',
+                    fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
+                  }}>
+                    TypeScript
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         {/* VALEDICTION */}
         <div style={{backgroundColor: 'purple', height: '65dvh'}}>
