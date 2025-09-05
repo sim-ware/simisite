@@ -20,17 +20,14 @@ export default function Landing() {
 
     const typePhrase = () => {
       if (char < phrases[idx].length) {
-        // add one more character
-        setText((t) => t + phrases[idx][char]);
+        setText((t) => t + phrases[idx][char]); 
         char++;
-        timeoutId = window.setTimeout(typePhrase, 60); // typing speed (ms per char)
+        timeoutId = window.setTimeout(typePhrase, 60); 
       } else {
-        // pause after finishing phrase
         timeoutId = window.setTimeout(() => {
-          // move to next phrase
-          setIdx((i) => (i + 1) % phrases.length);
-          setText(''); // instantly clear
-        }, 1600); // pause duration (ms)
+          setIdx((i) => (i + 1) % phrases.length); 
+          setText(''); 
+        }, 1600); 
       }
     };
 
@@ -47,10 +44,9 @@ export default function Landing() {
         paddingTop: '24.5dvh', 
         paddingLeft: '2.5dvw' 
       }}>
-        {/* wordmark / small, uppercased, top-left */}
-        <WordmarkHeader text="SIM-WARE" paddingLeft="0" />
+        <WordmarkHeader text="SIM-WARE" paddingLeft="0"/>
 
-        {/* hero headline with typing effect */}
+        {/* hero headline with typing effect and changing colors */}
         <h1 style={{ paddingTop: '10.5dvh'}} class={styles.hero}>
           <span class={styles.fade}>{text}</span>
           <span class={styles.caret}/>

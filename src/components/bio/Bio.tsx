@@ -2,13 +2,14 @@ import WordmarkHeader from '../WordmarkHeader';
 import Headline from '../Headline';
 import Copyright from '../Copyright';
 import Paragraph from '../Paragraph';
+import List from '../List';
 
 
 export default function Bio() {
   return (
     <section>
+      {/* LANDING */}
         <div style={{backgroundColor: 'orange', height: '110dvh'}}>
-          {/* wordmark / small, uppercased, top-left */}
           <WordmarkHeader 
             paddingLeft="2.5dvw" 
             text="ABOUT" 
@@ -19,15 +20,13 @@ export default function Bio() {
             text="For the past 14 years, I have been designing and developing software for a variety of clients, including startups, small businesses, and large corporations." 
           />
 
-          {/* Summary & Socials / Technologies Section */}
           <div style={{
             display: 'flex',
-            alignItems: 'flex-start', // makes the right column align to the top
+            alignItems: 'flex-start',
             paddingTop: '10dvh',
             paddingLeft: '2.5dvw',
-            gap: '5dvw' // space between the two columns
+            gap: '5dvw'
           }}>
-            {/* Left column: paragraphs */}
             <div style={{flex: 1, maxWidth: '47.5%'}}>
               <Paragraph 
                 paddingTop="0"
@@ -45,87 +44,16 @@ export default function Bio() {
               />
             </div>
 
-            {/* Right column: contact + tech stack */}
             <div style={{paddingTop: '0.5dvh', paddingLeft: '5dvh'}}>
-              <p style={{letterSpacing: '0.035em', fontWeight: 700, color: '#E0E7FF', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"}}>
-                CONTACT
-              </p>
-              <ul style={{
-                listStyleType: 'square',
-                paddingLeft: '1.5rem',
-                margin: 0
-              }}>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  LinkedIn
-                </li>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  GitHub
-                </li>
-              </ul>
-
-              <p style={{marginTop: '3.5dvh', letterSpacing: '0.035em', fontWeight: 700, color: '#E0E7FF', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"}}>
-                KEY TECHNOLOGIES
-              </p>
-              <ul style={{
-                listStyleType: 'square',
-                paddingLeft: '1.5rem',
-                margin: 0
-              }}>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  TypeScript
-                </li>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  node.js
-                </li>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  React
-                </li>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  AWS / Google Cloud
-                </li>
-                <li style={{
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  Python
-                </li>
-              </ul>
+              <List title="CONTACT" items={['LinkedIn', 'GitHub']} marginTop="0"/>
+              <List title="KEY TECHNOLOGIES" items={['TypeScript', 'node.js', 'React', 'AWS / Google Cloud', 'Python']} marginTop="3.5dvh"/>
             </div>
           </div>
         </div>
+        {/* ~ */}
 
+
+        {/* WORK */}
         <div style={{backgroundColor: 'green', height: '10dvh'}}>
           <WordmarkHeader text="WORK" paddingLeft="2.5dvw" />
         </div>
@@ -137,7 +65,6 @@ export default function Bio() {
           alignItems: 'flex-start',
           gap: '5dvw'
         }}>
-          {/* LEFT COLUMN */}
           <h1 style={{
             paddingLeft: '2.5dvw',
             paddingTop: '11dvh',
@@ -150,9 +77,7 @@ export default function Bio() {
             Oak Street Health
           </h1>
 
-          {/* RIGHT COLUMN */}
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            {/* Paragraph */}
             <p style={{
               fontSize: "clamp(1rem, .597vw + .881rem, 1.5rem)",
               color: '#E0E7FF',
@@ -161,64 +86,17 @@ export default function Bio() {
               Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano.
             </p>
 
-            {/* CRAFT + ROLE side by side */}
             <div style={{display: 'flex', gap: '5dvw'}}>
-              {/* CRAFT */}
               <div>
-                <p style={{
-                  marginBottom: '1rem',
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  CRAFT
-                </p>
-                <ul style={{
-                  listStyleType: 'square',
-                  paddingLeft: '1.5rem',
-                  margin: 0
-                }}>
-                  <li style={{
-                    letterSpacing: '0.035em',
-                    fontWeight: 700,
-                    color: '#E0E7FF',
-                    fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                  }}>
-                    TypeScript
-                  </li>
-                </ul>
+                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
               </div>
-
-              {/* ROLE */}
               <div>
-                <p style={{
-                  marginBottom: '1rem',
-                  letterSpacing: '0.035em',
-                  fontWeight: 700,
-                  color: '#E0E7FF',
-                  fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                }}>
-                  ROLE
-                </p>
-                <ul style={{
-                  listStyleType: 'square',
-                  paddingLeft: '1.5rem',
-                  margin: 0
-                }}>
-                  <li style={{
-                    letterSpacing: '0.035em',
-                    fontWeight: 700,
-                    color: '#E0E7FF',
-                    fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
-                  }}>
-                    TypeScript
-                  </li>
-                </ul>
+                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
               </div>
             </div>
           </div>
         </div>
+        {/* ~ */}
 
 
         {/* VALEDICTION */}
@@ -229,6 +107,7 @@ export default function Bio() {
           />
           <Copyright text="Samir Gossain" />
         </div>
+        {/* ~ */}
       </section>
   );
 }
