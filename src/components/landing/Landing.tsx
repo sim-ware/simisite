@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import styles from './Landing.module.css';
+import WordmarkHeader from '../WordmarkHeader';
+
 
 const phrases = [
   'Samir is a full-stack TypeScript developer',
@@ -18,17 +20,14 @@ export default function Landing() {
 
     const typePhrase = () => {
       if (char < phrases[idx].length) {
-        // add one more character
-        setText((t) => t + phrases[idx][char]);
+        setText((t) => t + phrases[idx][char]); 
         char++;
-        timeoutId = window.setTimeout(typePhrase, 60); // typing speed (ms per char)
+        timeoutId = window.setTimeout(typePhrase, 60); 
       } else {
-        // pause after finishing phrase
         timeoutId = window.setTimeout(() => {
-          // move to next phrase
-          setIdx((i) => (i + 1) % phrases.length);
-          setText(''); // instantly clear
-        }, 1600); // pause duration (ms)
+          setIdx((i) => (i + 1) % phrases.length); 
+          setText(''); 
+        }, 1600); 
       }
     };
 
@@ -39,13 +38,24 @@ export default function Landing() {
 
   return (
     <>
-      <div style={{ backgroundColor: '#39f', height: '90dvh', paddingTop: '24.5dvh', paddingLeft: '2.5dvw' }}>
+      <div style={{ 
+        backgroundColor: '#39f', 
+        height: '90dvh', 
+        paddingTop: '24.5dvh', 
+        paddingLeft: '2.5dvw' 
+      }}>
+        <WordmarkHeader text="SIM-WARE" paddingLeft="0"/>
 
-        {/* wordmark / small, uppercased, top-left */}
-        <p style={{ letterSpacing: '0.035em', fontWeight: 700, color: '#e0e7ff', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" }}>SIM-WARE</p>
-
-        {/* hero headline with typing effect */}
-        <h1 style={{ paddingTop: '10.5dvh'}} class={styles.hero}>
+        <h1 
+          style={{ 
+            paddingTop: '10.5dvh',
+            fontSize: 'clamp(1.688rem,6.642vw + .359rem,7.25rem)',
+            lineHeight: 1,
+            fontWeight: 700,
+            letterSpacing: '-.045em',
+          }} 
+          class="chroma-text"
+        >
           <span class={styles.fade}>{text}</span>
           <span class={styles.caret}/>
         </h1>
