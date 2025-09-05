@@ -46,8 +46,16 @@ export default function Landing() {
       }}>
         <WordmarkHeader text="SIM-WARE" paddingLeft="0"/>
 
-        {/* hero headline with typing effect and changing colors */}
-        <h1 style={{ paddingTop: '10.5dvh'}} class={styles.hero}>
+        <h1 
+          style={{ 
+            paddingTop: '10.5dvh',
+            fontSize: 'clamp(1.688rem,6.642vw + .359rem,7.25rem)',
+            lineHeight: 1,
+            fontWeight: 700,
+            letterSpacing: '-.045em',
+          }} 
+          class="chroma-text"
+        >
           <span class={styles.fade}>{text}</span>
           <span class={styles.caret}/>
         </h1>
