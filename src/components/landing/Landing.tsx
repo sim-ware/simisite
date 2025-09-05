@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import styles from './Landing.module.css';
+import WordmarkHeader from '../WordmarkHeader';
+
 
 const phrases = [
   'Samir is a full-stack TypeScript developer',
@@ -39,10 +41,14 @@ export default function Landing() {
 
   return (
     <>
-      <div style={{ backgroundColor: '#39f', height: '90dvh', paddingTop: '24.5dvh', paddingLeft: '2.5dvw' }}>
-
+      <div style={{ 
+        backgroundColor: '#39f', 
+        height: '90dvh', 
+        paddingTop: '24.5dvh', 
+        paddingLeft: '2.5dvw' 
+      }}>
         {/* wordmark / small, uppercased, top-left */}
-        <p style={{ letterSpacing: '0.035em', fontWeight: 700, color: '#e0e7ff', fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" }}>SIM-WARE</p>
+        <WordmarkHeader text="SIM-WARE" paddingLeft="0" />
 
         {/* hero headline with typing effect */}
         <h1 style={{ paddingTop: '10.5dvh'}} class={styles.hero}>
