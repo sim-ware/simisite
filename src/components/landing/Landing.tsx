@@ -39,7 +39,8 @@ export default function Landing() {
   return (
     <>
       <div style={{ 
-        backgroundColor: '#39f', 
+        // backgroundColor: '#39f', 
+        background: 'radial-gradient(circle at top left, #1e3a8a, #0f172a)',
         height: '90dvh', 
         paddingTop: '24.5dvh', 
         paddingLeft: '2.5dvw' 

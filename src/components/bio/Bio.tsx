@@ -31,7 +31,7 @@ export default function Bio() {
             <div style={{flex: 1, maxWidth: '47.5%'}}>
               <Paragraph 
                 paddingTop="0"
-                text="I'm a Software Developer with a focus on full-stack TypeScript, especially React & Node.js. I am skilled in test-driven development, and am dedicated to ensuring maintainable and high-quality code. I've experience across public and private sectors, from early-stage startups to large-scale enterprise environments. I'm adaptable to remote work, an effective pair programmer, and a kind mentor who enjoys fostering team growth."
+                text="I'm a Software Developer with a focus on full-stack TypeScript, especially React & node.js. I am skilled in test-driven development, and am dedicated to ensuring maintainable and high-quality code. I've experience across public and private sectors, from early-stage startups to large-scale enterprise environments. I'm adaptable to remote work, an effective pair programmer, and a kind mentor who enjoys fostering team growth."
                 marginBottom="0"
               />
 
