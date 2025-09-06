@@ -82,10 +82,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['TypeScript', 'React', 'Node.js', 'Swift/XCode', 'Google Cloud']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Full Stack Engineer']} marginTop="0"/>
               </div>
             </div>
           </div>
@@ -106,10 +106,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['node.js', 'TypeScript', 'PostGres', 'AWS']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Software Engineer']} marginTop="0"/>
               </div>
             </div>
           </div>
@@ -130,10 +130,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['TypeScript', 'Angular', 'Firebase', 'Python', 'GCP']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Software Engineer']} marginTop="0"/>
               </div>
             </div>
           </div>
@@ -154,10 +154,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['TypeScript', 'node.js', 'React', 'Kepler', 'GCP']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Full Stack Web Developer']} marginTop="0"/>
               </div>
             </div>
           </div>
@@ -178,10 +178,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['TypeScript', 'React', 'React Native', 'node.js', 'XCode', 'Firebase', 'SQL']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Software Developer']} marginTop="0"/>
               </div>
             </div>
           </div>
@@ -202,10 +202,10 @@ export default function Bio() {
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
-                <List title="CRAFT" items={['TypeScript']} marginTop="0"/>
+                <List title="CRAFT" items={['Python', 'Django', 'React', 'TypeScript']} marginTop="0"/>
               </div>
               <div>
-                <List title="ROLE" items={['TypeScript']} marginTop="0"/>
+                <List title="ROLE" items={['Junior Full-Stack Developer']} marginTop="0"/>
               </div>
             </div>
           </div>
