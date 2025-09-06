@@ -12,7 +12,7 @@ export default function List({ title, items, marginTop }: { title: string, items
       </p>
       <ul style={{
         listStyleType: 'square',
-        paddingLeft: '1.5rem',
+        paddingLeft: '0.5rem',
         margin: 0
       }}>
         {
