@@ -5,7 +5,7 @@ export default function List({ title, items, marginTop }: { title: string, items
         marginTop: marginTop,
         letterSpacing: '0.035em', 
         fontWeight: 700, 
-        color: '#E0E7FF', 
+        color: '#1E293B', 
         fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
       }}>
         {title}
@@ -20,7 +20,7 @@ export default function List({ title, items, marginTop }: { title: string, items
             <li style={{
               letterSpacing: '0.035em',
               fontWeight: 700,
-              color: '#E0E7FF',
+              color: '#1E293B',
               fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
             }}>
               {item}
