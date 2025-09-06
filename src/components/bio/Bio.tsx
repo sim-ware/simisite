@@ -10,10 +10,15 @@ export default function Bio() {
   return (
     <section>
       {/* LANDING */}
-        <div class="chroma-bg" style={{height: '140dvh'}}>
+        <div class="chroma-bg" style={{
+          height: '140dvh',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
+          borderOpacity: '0.1'
+        }}>
           <WordmarkHeader 
             paddingLeft="2.5dvw" 
-            text="ABOUT" 
+            text="ABOUT"
           />
 
           <Headline 
@@ -58,21 +63,22 @@ export default function Bio() {
 
 
         {/* WORK */}
-        <div style={{backgroundColor: 'green', height: '10dvh'}}>
+        <div class="chroma-bg" style={{height: '10dvh'}}>
           <WordmarkHeader text="WORK" paddingLeft="2.5dvw" />
         </div>
 
-        <div style={{
-          backgroundColor: 'purple',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="ELSE"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Served as the sole developer on ELSE’s innovation team, prototyping successful ideas and exploring feasibility for new concepts." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -85,17 +91,18 @@ export default function Bio() {
           </div>
         </div>
 
-        <div style={{
-          backgroundColor: 'pink',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="PetsApp"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Worked on the integrations team at PetsApp, streamlining pet healthcare through connected patient management software." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -108,17 +115,18 @@ export default function Bio() {
           </div>
         </div>
 
-        <div style={{
-          backgroundColor: 'purple',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="IslaCare"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Led early development at Islacare, creating secure and compliant systems for medical professionals to manage images and video." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -131,17 +139,18 @@ export default function Bio() {
           </div>
         </div>
 
-        <div style={{
-          backgroundColor: 'pink',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="Cogniflare"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Built internal tools at Cogniflare for Vodafone, enhancing data management and team-wide access at a global telecom giant." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -154,17 +163,18 @@ export default function Bio() {
           </div>
         </div>
 
-        <div style={{
-          backgroundColor: 'purple',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="Circular Wave"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Contributed to an emerging healthcare startup focused on simplifying shift management for medical professionals." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -177,17 +187,18 @@ export default function Bio() {
           </div>
         </div>
 
-        <div style={{
-          backgroundColor: 'pink',
+        <div class="chroma-bg" style={{
           height: '50dvh',
           display: 'flex',
           alignItems: 'flex-start',
-          gap: '5dvw'
+          gap: '5dvw',
+          borderColor: '#1E293B',
+          borderBottomWidth: '1px',
         }}>
           <WorkHeader text="Acrotrend" />
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Outside of work, I'm a hobbyist musician and enjoy playing guitar and piano." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Joined the innovation team at an international consultancy, supporting rapid prototyping and early-stage product development as a junior developer." paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -203,7 +214,7 @@ export default function Bio() {
 
 
         {/* VALEDICTION */}
-        <div style={{backgroundColor: 'purple', height: '65dvh'}}>
+        <div class="chroma-bg" style={{height: '65dvh'}}>
           <Headline 
             paddingTop="22dvh" 
             text="Thanks for stopping by. If you have a project or are hiring for an exciting role, I'd love to hear from you."
