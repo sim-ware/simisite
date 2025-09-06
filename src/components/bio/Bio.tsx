@@ -78,7 +78,7 @@ export default function Bio() {
           <WorkHeader text="ELSE"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Served as the sole developer on ELSE’s innovation team, prototyping successful ideas and exploring feasibility for new concepts." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Served as the sole developer on ELSE’s innovation team, prototyping successful ideas and exploring feasibility for new concepts" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -102,7 +102,7 @@ export default function Bio() {
           <WorkHeader text="PetsApp"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Worked on the integrations team at PetsApp, streamlining pet healthcare through connected patient management software." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Worked on the integrations team at PetsApp, streamlining pet healthcare through connected patient management software" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -126,7 +126,7 @@ export default function Bio() {
           <WorkHeader text="IslaCare"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Led early development at Islacare, creating secure and compliant systems for medical professionals to manage images and video." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Led early development at Islacare, creating secure and compliant systems for medical professionals to manage images and video" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -150,7 +150,7 @@ export default function Bio() {
           <WorkHeader text="Cogniflare"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Built internal tools at Cogniflare for Vodafone, enhancing data management and team-wide access at a global telecom giant." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Built internal tools at Cogniflare for Vodafone, enhancing data management and team-wide access at a global telecom giant" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -174,7 +174,7 @@ export default function Bio() {
           <WorkHeader text="Circular Wave"/>
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Contributed to an emerging healthcare startup focused on simplifying shift management for medical professionals." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Contributed to an emerging healthcare startup focused on simplifying shift management for medical professionals" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
@@ -198,7 +198,7 @@ export default function Bio() {
           <WorkHeader text="Acrotrend" />
 
           <div style={{paddingTop: '11dvh', flex: 1}}>
-            <Paragraph text="Joined the innovation team at an international consultancy, supporting rapid prototyping and early-stage product development as a junior developer." paddingTop="0" marginBottom="3.5dvh"/>
+            <Paragraph text="Joined the innovation team at an international consultancy, supporting rapid prototyping and early-stage product development as a junior developer" paddingTop="0" marginBottom="3.5dvh"/>
 
             <div style={{display: 'flex', gap: '5dvw'}}>
               <div>
