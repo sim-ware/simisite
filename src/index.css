@@ -14,3 +14,19 @@
 html {
   font-family: 'Apercu', 'DM Sans', 'Inter', sans-serif;
 }
+
+body {
+  background: radial-gradient(circle at top left, #1e3a8a, #0f172a);
+  margin: 0;
+  padding: 0;
+}
+
+/* Disable text selection and copying */
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
