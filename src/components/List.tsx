@@ -36,13 +36,13 @@ export default function List({ title, items, marginTop, underlineTitle, isLink }
                     transition: 'color 0.2s ease, transform 0.2s ease',
                     display: 'inline-block'
                   }}
-                  onMouseEnter={(e) => {
-                    e.target && (e.target.style.color = '#3b82f6');
-                    e.target && (e.target.style.transform = 'translateX(2px)');
+                  onMouseEnter={(e: MouseEvent) => {
+                    (e.target as HTMLElement).style.color = '#3b82f6';
+                    (e.target as HTMLElement).style.transform = 'translateX(2px)';
                   }}
-                  onMouseLeave={(e) => {
-                    e.target && (e.target.style.color = 'rgb(98, 105, 118)');
-                    e.target && (e.target.style.transform = 'translateX(0)');
+                  onMouseLeave={(e: MouseEvent) => {
+                    (e.target as HTMLElement).style.color = 'rgb(98, 105, 118)';
+                    (e.target as HTMLElement).style.transform = 'translateX(0)';
                   }}
                 >
                   {item}
