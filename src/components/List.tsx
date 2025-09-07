@@ -25,7 +25,9 @@ export default function List({ title, items, marginTop, underlineTitle }: { titl
               color: 'rgb(98, 105, 118)',
               fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
             }}>
-              {item}
+              <a href={'www.google.com'} target="_blank" rel="noopener noreferrer">
+                {item}
+              </a>
             </li>
           ))
         }

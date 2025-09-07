@@ -10,6 +10,7 @@
   transform: translateY(0.06em);
   animation: caret-blink 1s steps(1) infinite;
   margin-left: 0.04em;           /* tiny gap after last character */
+  white-space: nowrap;           /* prevent caret from wrapping */
 }
 
 @keyframes caret-blink {
