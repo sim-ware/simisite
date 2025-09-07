@@ -20,7 +20,7 @@ const phrases = [
   "is a security-and-accessibility advocate.",
   "is a remote-ready teammate you can rely on.",
   "is a developer who writes like an English grad.",
-  "is a communicator who makes complexity simple.",
+  "is a clear communicator who makes complexity simple.",
   "is a bilingual problem solver (FR/ES).",
   "is a lifelong learner with startup grit.",
   "is a detail-obsessed tester with taste.",
@@ -34,7 +34,7 @@ const phrases = [
 ];
 
 
-export default function Landing() {
+export default function Landing({ onDeleteStart, showContent }: { onDeleteStart?: () => void, showContent?: boolean }) {
   const [text, setText] = useState('');
   const [idx, setIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -52,6 +52,7 @@ export default function Landing() {
         // Finished typing, wait then start deleting
         timeoutId = window.setTimeout(() => {
           setIsDeleting(true);
+          onDeleteStart?.(); // Trigger the fade-in effect
         }, 1600); 
       }
     };
@@ -97,7 +98,9 @@ export default function Landing() {
           paddingTop: '3.5dvh', 
           letterSpacing: '0.035em', 
           fontWeight: 700, 
-          fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" 
+          fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)",
+          opacity: showContent ? 1 : 0,
+          transition: 'opacity 1s ease-in-out'
         }}>
           SIM-WARE
         </p>

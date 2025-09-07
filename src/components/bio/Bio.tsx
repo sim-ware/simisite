@@ -57,7 +57,7 @@ export default function Bio() {
             </div>
 
             <div style={{paddingTop: '0.5dvh', paddingLeft: '5dvh'}}>
-              <List title="CONTACT" items={['LinkedIn', 'GitHub']} marginTop="0" underlineTitle={false}/>
+              <List title="CONTACT" items={['Email', 'LinkedIn', 'GitHub']} marginTop="0" underlineTitle={false} isLink={['mailto:samirgossain@gmail.com', 'https://www.linkedin.com/in/samir-gossain-linked/', 'https://github.com/sim-ware']}/>
               <List title="KEY TECHNOLOGIES" items={['TypeScript', 'node.js', 'React', 'AWS / Google Cloud', 'Python']} marginTop="3.5dvh" underlineTitle={false}/>
             </div>
           </div>
@@ -259,10 +259,35 @@ export default function Bio() {
 
         {/* VALEDICTION */}
         <div class="chroma-bg" style={{height: '65dvh'}}>
-          <Headline 
-            paddingTop="22dvh" 
-            text="Thanks for stopping by. If you have a project or are hiring for an exciting role, I'd love to hear from you."
-          />
+          <h3 style={{
+            lineHeight: '1', 
+            paddingTop: '22dvh', 
+            paddingLeft: '2.5dvw',
+            paddingRight: '2.5dvw',
+            letterSpacing: '-0.055em', 
+            fontWeight: 500, 
+            color: 'rgb(98, 105, 118)', 
+            fontSize: "clamp(1.5rem,3.582vw + .784rem,4.5rem)"
+          }}>
+            Thanks for stopping by. If you have a project or are hiring for an exciting role,{' '}
+            <a 
+              href="mailto:samir.gossain@gmail.com"
+              style={{
+                color: 'inherit',
+                textDecoration: 'underline',
+                transition: 'color 0.2s ease',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.target && (e.target.style.color = '#3b82f6');
+              }}
+              onMouseLeave={(e) => {
+                e.target && (e.target.style.color = 'rgb(98, 105, 118)');
+              }}
+            >
+              I'd love to hear from you.
+            </a>
+          </h3>
           <Copyright text="Samir Gossain" />
         </div>
         {/* ~ */}

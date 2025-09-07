@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☯</text></svg>" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Preact + TS</title>
+    <title>Samir Gossain | Software Engineer</title>
   </head>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Disable right-click context menu
+      document.addEventListener('contextmenu', e => e.preventDefault());
+      
+      // Disable keyboard shortcuts for copy/paste
+      document.addEventListener('keydown', e => {
+        // Disable Ctrl+C, Ctrl+A, Ctrl+V, Ctrl+X, Ctrl+S, F12, Ctrl+Shift+I
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'a' || e.key === 'v' || e.key === 'x' || e.key === 's')) {
+          e.preventDefault();
+        }
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+          e.preventDefault();
+        }
+      });
+    </script>
   </body>
 </html>
