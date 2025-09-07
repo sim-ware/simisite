@@ -8,7 +8,7 @@ export default function WorkHeader({ text }: { text: string }) {
       fontWeight: 700,
       letterSpacing: '-.045em',
       width: '47.5%',
-      color: '#1E293B'
+      color: 'rgb(98, 105, 118)'
     }}>
       {text}
     </h1>

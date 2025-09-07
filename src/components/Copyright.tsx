@@ -5,7 +5,7 @@ export default function Copyright({ text }: { text: string }) {
       paddingLeft: '2.5dvw', 
       fontWeight: 400, 
       fontSize: 'clamp(1rem, 0.881rem + 0.597vw, 1.5rem)', 
-      color: '#1E293B'
+      color: 'rgb(98, 105, 118)'
     }}
     >
       © {text}

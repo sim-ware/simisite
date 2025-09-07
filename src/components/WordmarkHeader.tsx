@@ -5,7 +5,7 @@ export default function WordmarkHeader({ text, paddingLeft }: { text: string, pa
       paddingLeft: paddingLeft, 
       letterSpacing: '0.035em', 
       fontWeight: 700, 
-      color: '#1E293B', 
+      color: 'rgb(98, 105, 118)', 
       fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" 
     }}>
       {text}

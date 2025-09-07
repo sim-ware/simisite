@@ -1,12 +1,14 @@
-export default function List({ title, items, marginTop }: { title: string, items: string[], marginTop: string }) {
+export default function List({ title, items, marginTop, underlineTitle }: { title: string, items: string[], marginTop: string, underlineTitle: boolean }) {
   return(
     <>
       <p style={{
         marginTop: marginTop,
         letterSpacing: '0.035em', 
         fontWeight: 700, 
-        color: '#1E293B', 
-        fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
+        color: 'rgb(98, 105, 118)', 
+        fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)",
+        borderColor: underlineTitle ? 'rgba(30, 41, 59, 0.5)' : 'transparent',
+        borderBottomWidth: '1.25px'
       }}>
         {title}
       </p>
@@ -20,7 +22,7 @@ export default function List({ title, items, marginTop }: { title: string, items
             <li style={{
               letterSpacing: '0.035em',
               fontWeight: 700,
-              color: '#1E293B',
+              color: 'rgb(98, 105, 118)',
               fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)"
             }}>
               {item}

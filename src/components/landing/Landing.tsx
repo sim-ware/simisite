@@ -39,7 +39,6 @@ export default function Landing() {
   return (
     <>
       <div style={{ 
-        // backgroundColor: '#39f', 
         background: 'radial-gradient(circle at top left, #1e3a8a, #0f172a)',
         height: '90dvh', 
         paddingTop: '24.5dvh', 
@@ -50,7 +49,6 @@ export default function Landing() {
           paddingTop: '3.5dvh', 
           letterSpacing: '0.035em', 
           fontWeight: 700, 
-          // color: '#1E293B', 
           fontSize: "clamp(0.875rem, 1.03rem - 0.149vw, 1rem)" 
         }}>
           SIM-WARE
