@@ -278,11 +278,11 @@ export default function Bio() {
                 transition: 'color 0.2s ease',
                 cursor: 'pointer'
               }}
-              onMouseEnter={(e) => {
-                e.target && (e.target.style.color = '#3b82f6');
+              onMouseEnter={(e: MouseEvent) => {
+                (e.target as HTMLElement).style.color = '#3b82f6';
               }}
-              onMouseLeave={(e) => {
-                e.target && (e.target.style.color = 'rgb(98, 105, 118)');
+              onMouseLeave={(e: MouseEvent) => {
+                (e.target as HTMLElement).style.color = 'rgb(98, 105, 118)';
               }}
             >
               I'd love to hear from you.
