@@ -1,10 +1,25 @@
-import { useState } from 'preact/hooks';
+import { useState, useEffect } from 'preact/hooks';
 import ChromaProvider from './components/ChromaProvider';
 import Landing from './components/landing/Landing';
 import Bio from './components/bio/Bio';
 
+function useIsMobile(maxWidth = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${maxWidth}px)`);
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [maxWidth]);
+
+  return isMobile;
+}
+
 export function App() {
   const [showContent, setShowContent] = useState(false);
+  const isMobile = useIsMobile();
   return (
     <ChromaProvider>
       <div style={{ position: 'relative' }}>
@@ -26,7 +41,7 @@ export function App() {
         <div style={{
           position: 'relative',
           zIndex: 2,
-          marginTop: '90vh', // Start slightly before the landing viewport ends
+          marginTop: isMobile ? '80vh' : '90vh', // Match the landing component height
           opacity: showContent ? 1 : 0,
           transition: 'opacity 1s ease-in-out'
         }}>
