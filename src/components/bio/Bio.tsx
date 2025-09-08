@@ -5,14 +5,32 @@ import Paragraph from '../Paragraph';
 import List from '../List';
 import WorkHeader from '../WorkHeader';
 import HoverBox from '../HoverBox';
+import { useEffect, useState } from "react";
+
+
+function useIsMobile(maxWidth = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${maxWidth}px)`);
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [maxWidth]);
+
+  return isMobile;
+}
+
 
 
 export default function Bio() {
+  const isMobile = useIsMobile();
   return (
     <section>
       {/* LANDING */}
         <div class="chroma-bg" style={{
-          height: '140dvh',
+          height: isMobile ? '245dvh' : '140dvh',
           borderColor: 'rgba(30, 41, 59, 0.25)',
           borderBottomWidth: '1px'
         }}>
@@ -73,7 +91,7 @@ export default function Bio() {
         <HoverBox
           className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",
@@ -103,7 +121,7 @@ export default function Bio() {
 
         <HoverBox className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",
@@ -134,7 +152,7 @@ export default function Bio() {
         <HoverBox 
         className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",
@@ -165,7 +183,7 @@ export default function Bio() {
         <HoverBox
           className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",
@@ -196,7 +214,7 @@ export default function Bio() {
         <HoverBox 
           className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",
@@ -227,7 +245,7 @@ export default function Bio() {
         <HoverBox 
           className="chroma-bg"
           baseStyle={{
-            height: "50dvh",
+            height: isMobile ? "75dvh" : "50dvh",
             display: "flex",
             alignItems: "flex-start",
             gap: "5dvw",

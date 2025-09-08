@@ -2,6 +2,20 @@ import { useEffect, useState } from 'preact/hooks';
 import styles from './Landing.module.css';
 // import WordmarkHeader from '../WordmarkHeader';
 
+function useIsMobile(maxWidth = 768) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia(`(max-width: ${maxWidth}px)`);
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, [maxWidth]);
+
+  return isMobile;
+}
+
 
 const phrases = [
   "is a full-stack TypeScript engineer.",
@@ -38,6 +52,7 @@ export default function Landing({ onDeleteStart, showContent }: { onDeleteStart?
   const [text, setText] = useState('');
   const [idx, setIdx] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     let char = 0;
@@ -89,7 +104,7 @@ export default function Landing({ onDeleteStart, showContent }: { onDeleteStart?
     <>
       <div style={{ 
         background: 'radial-gradient(circle at top left, #1e3a8a, #0f172a)',
-        height: '90dvh', 
+        height: isMobile ? '80dvh' : '90dvh', 
         paddingTop: '24.5dvh', 
         paddingLeft: '2.5dvw' 
       }}>
